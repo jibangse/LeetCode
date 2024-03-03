@@ -15,8 +15,8 @@ public:
     void dfs(TreeNode* root, long long sum) {
         if(!root) return;
         if(root->val==sum) ans++;
-        if(root->left) dfs(root->left,sum-root->val);
-        if(root->right) dfs(root->right,sum-root->val);
+        /*if(root->left)*/ dfs(root->left,sum-root->val);
+        /*if(root->right)*/ dfs(root->right,sum-root->val);
     }
     
     int pathSum(TreeNode* root, int targetSum) {
