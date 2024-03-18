@@ -1,15 +1,11 @@
 class Solution {
-public:
-    
+public:    
     int CountChar(char c, string s) {
         //s is a sorted string.
         int cnt = 0;
         for(auto ch : s) {
-            if(ch==c) {
-                cnt++;
-            } else {
-                if(cnt>0) break;
-            }
+            if(ch==c) cnt++;
+            else if(cnt>0) break;
         }
         return cnt;
     }
